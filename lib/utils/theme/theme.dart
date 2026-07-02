@@ -12,7 +12,6 @@ import '../constants/colors.dart';
 
 class UAppTheme
 {
-
     // private constructor
     UAppTheme._();
 

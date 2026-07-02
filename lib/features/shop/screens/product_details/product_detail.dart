@@ -76,7 +76,7 @@ class UProductDetailScreen extends StatelessWidget {
       ),
 
       /// ---------- [Bottom Navigation] -------------
-      bottomNavigationBar: UBottomAddToCart(),
+      bottomNavigationBar: UBottomAddToCart(product: product),
     );
   }
 }

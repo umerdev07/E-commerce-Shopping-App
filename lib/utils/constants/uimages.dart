@@ -7,6 +7,7 @@ class UImages {
   static const String onBoardingAnimation3 = 'assets/animations/delivery.json';
   static const String loadingAnimation = 'assets/animations/loading.json';
   static const String loadingPencilDrawing = 'assets/animations/pencil_drawing.json';
+  static const String loadingCartEmpty = 'assets/animations/cart_empty.json';
 
   static const String googleIcon = 'assets/logo/google.png';
   static const String facebookIcon = 'assets/logo/facebook.png';

@@ -1,3 +1,4 @@
+import 'package:e_commerce/common/widgets/button/add_to_cart_button.dart';
 import 'package:e_commerce/common/widgets/custom_shapes/URoundedContainer.dart';
 import 'package:e_commerce/common/widgets/favourite/u_favourite.dart';
 import 'package:e_commerce/common/widgets/images/rounded__image.dart';
@@ -124,18 +125,8 @@ class UProductCardVertical extends StatelessWidget {
                   productPrice: controller.calculateAndGetProductPrice(product),
                 ),
 
-                Container(
-                  width: USizes.iconLg * 1.35,
-                  height: USizes.iconLg * 1.35,
-                  decoration: BoxDecoration(
-                    color: UColors.primary,
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(USizes.cardRadiusMd),
-                      bottomRight: Radius.circular(USizes.productImageRadius),
-                    ),
-                  ),
-                  child: Icon(Iconsax.add, color: UColors.white),
-                ),
+                // Add Button
+                UProductAddToCartButton(product: product)
               ],
             ),
           ],

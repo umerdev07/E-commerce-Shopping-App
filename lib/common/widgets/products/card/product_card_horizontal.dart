@@ -9,11 +9,10 @@ import 'package:iconsax_flutter/iconsax_flutter.dart';
 import '../../../../features/shop/controllers/product/product_controller.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
-import '../../../../utils/constants/uimages.dart';
 import '../../../../utils/helpers/helper_function.dart';
 
+import '../../button/add_to_cart_button.dart';
 import '../../custom_shapes/URoundedContainer.dart';
-import '../../icons/circular_icon.dart';
 import '../../images/rounded__image.dart';
 import '../../texts/brand_title_with_verify_icon.dart';
 import '../../texts/product_price.dart';
@@ -107,20 +106,8 @@ class UHorizontalProductCard extends StatelessWidget {
                       children: [
                         Flexible(child: UProductCadPrice(productPrice: controller.calculateAndGetProductPrice(product))),
 
-                        Container(
-                          width: USizes.iconLg * 1.35,
-                          height: USizes.iconLg * 1.35,
-                          decoration: BoxDecoration(
-                            color: UColors.primary,
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(USizes.cardRadiusMd),
-                              bottomRight: Radius.circular(
-                                USizes.productImageRadius,
-                              ),
-                            ),
-                          ),
-                          child: Icon(Iconsax.add, color: UColors.white),
-                        ),
+                        UProductAddToCartButton(product: product)
+
                       ],
                     ),
                   ],

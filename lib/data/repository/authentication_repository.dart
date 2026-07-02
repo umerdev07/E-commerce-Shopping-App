@@ -1,8 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:e_commerce/data/repository/banner/banner_repository.dart';
-import 'package:e_commerce/data/repository/brand/brand_repository.dart';
-import 'package:e_commerce/data/repository/category/category_repository.dart';
-import 'package:e_commerce/data/repository/products/products_repository.dart';
 import 'package:e_commerce/data/repository/user/user_repository.dart';
 import 'package:e_commerce/data/service/cloudinary_service.dart';
 import 'package:e_commerce/dummy_data.dart';

@@ -22,4 +22,6 @@ class Keys {
   static const String bannerFolder = 'Banners Pictures';
   static const String brandFolder = 'Brands Pictures';
   static const String productFolder = 'Products Pictures';
+
+  static const String cartItemKeys = 'cartItems';
 }

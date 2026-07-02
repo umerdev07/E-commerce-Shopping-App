@@ -42,10 +42,14 @@ class NavigationMenu extends StatelessWidget {
 }
 
 class NavigationController extends GetxController {
-
   static NavigationController get instance => Get.find();
 
   RxInt selectedIndex = 0.obs;
 
-  List<Widget> screen = [HomeScreen(), StoreScreen(), WishListScreen(), ProfileScreen()];
+  List<Widget> screen = [
+    HomeScreen(),
+    StoreScreen(),
+    WishListScreen(),
+    ProfileScreen(),
+  ];
 }
